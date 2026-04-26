@@ -126,6 +126,22 @@ Stay cool for just ₱99! #TikTokBudol #SummerFinds
 
 ---
 
+## System Architecture
+
+This project uses a two-workflow system:
+
+1. **Content Input Bot (Telegram)**
+   - Accepts product input
+   - Generates content using AI
+   - Stores results in Google Sheets
+
+2. **Daily Content Delivery (Digest System)**
+   - Pulls “Draft” content from database
+   - Sends daily TikTok ideas via Telegram
+
+This creates a complete content workflow:
+Input → Generate → Store → Deliver
+
 ## Impact
 
 - Eliminates manual product entry into spreadsheets  
