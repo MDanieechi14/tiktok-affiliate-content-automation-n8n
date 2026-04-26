@@ -1,112 +1,145 @@
 # TikTok Affiliate Content & Lead Automation Bot
 
-AI-powered TikTok content assistant that generates viral-ready ideas, scripts, and captions—delivered daily via Telegram.
+AI-powered Telegram assistant that lets TikTok affiliates input products instantly and receive ready-to-post content—while automatically organizing everything in a content database.
 
 ---
 
 ## Overview
 
-This system acts as a 24/7 content assistant for TikTok affiliates, eliminating the daily problem:
+This system acts as a **real-time content assistant + input tool** for TikTok affiliates.
 
-> “Ano ba ang ipopost ko today?”
+Instead of:
+- Opening spreadsheets  
+- Manually logging products  
+- Thinking of what to post  
 
-Instead of manually brainstorming content, the system automatically generates ready-to-use TikTok ideas, scripts, and captions based on product input.
+You simply send a message in Telegram.
+
+The system handles everything automatically.
 
 ---
 
 ## The Problem
 
-TikTok affiliates struggle with:
-- Running out of content ideas daily  
-- Spending 1–2 hours brainstorming posts  
-- Inconsistent posting  
-- Lack of structured content workflow  
+TikTok affiliates deal with:
+
+- “Ano ba ang ipopost ko today?”
+- Manually entering product data into sheets  
+- Wasting time switching between tools  
+- Inconsistent content workflow  
 
 ---
 
 ## The Solution
 
-Built an automation workflow in n8n that:
+Built an n8n automation that:
 
 - Accepts product input via Telegram  
-- Uses AI to generate viral TikTok content  
-- Stores ideas in a structured database  
-- Delivers daily ready-to-post content automatically  
+- Instantly generates TikTok-ready content  
+- Automatically logs everything into Google Sheets  
+- Acts as a daily content assistant  
 
 ---
 
 ## Key Features
 
-- **Telegram Input Command**
-  Submit product link or keyword (e.g. `/new wireless earbuds`)
+- **Telegram-Based Input (No Spreadsheet Needed)**  
+  Just type:  
+  `/new baby lotion 99 pesos`
 
-- **AI Content Generation**
+- **Instant AI Content Generation**  
   Generates:
   - 3 viral hooks  
   - 1 short-form script (15–30 sec)  
   - 1 caption + hashtags  
 
-- **Daily Content Delivery**
-  Sends 3 ready-to-post ideas every morning (8 AM)
+- **Automatic Data Logging**  
+  Product + content is saved directly to Google Sheets  
 
-- **Content Database**
-  Automatically saves all ideas in Google Sheets (Draft → Posted tracking)
+- **All-in-One Workflow**  
+  Input → Content → Storage → Done  
 
-- **Taglish Output**
-  Optimized for Filipino TikTok audience (POV, budol, relatable style)
+- **Taglish Output (Localized Content)**  
+  Optimized for Filipino TikTok audience  
 
 ---
 
 ## Example Output
 
-**Telegram Message:**
-
 ```
-Good morning! 🔥 Here are your 3 TikTok ideas for today:
+🎯 Your Daily TikTok Content Ideas!
 
-1. POV: You found the best ₱99 budol on TikTok  
-Script: "Guys, eto na yung wireless earbuds..."  
-Caption: POV: Nakita mo 'to sa FYP... #ShopeeFinds
+📦 Product: Portable Mini Fan ₱99  
 
-2. Hook 2...
+🪝 Hook 1: Beat the heat with this game-changing portable mini fan  
+🪝 Hook 2: Imagine having your own personal aircon for just ₱99  
+🪝 Hook 3: Say goodbye to sweaty days  
 
-3. Hook 3...
+🎬 Script:  
+"Hey guys, I'm so excited to share this mini fan..."
+
+📝 Caption:  
+Stay cool for just ₱99! #TikTokBudol #SummerFinds
 ```
+
+---
+
+## Workflow Overview
+
+![Workflow](screenshots/workflow-overview.png)
+
+---
+
+## Telegram Interaction
+
+![Telegram Output](screenshots/telegram-output.png)
+
+---
+
+## Data Storage (Google Sheets)
+
+![Google Sheets](screenshots/google-sheets.png)
+
+---
+
+## Sample Outputs
+
+📄 See more examples: `/samples/sample-output.md`
 
 ---
 
 ## Tech Stack
 
-- n8n (workflow automation)
-- OpenAI API (content generation)
-- Telegram Bot API (input/output)
-- Google Sheets (data storage)
+- n8n (workflow automation)  
+- OpenAI API (content generation)  
+- Telegram Bot API (input/output)  
+- Google Sheets (data storage)  
 
 ---
 
-## Workflow Summary
+## How It Works
 
 1. User sends product via Telegram  
 2. AI generates hooks, script, and caption  
-3. Data is saved in Google Sheets  
-4. Daily trigger sends content ideas automatically  
+3. Data is saved automatically to Google Sheets  
+4. Content is ready to post instantly  
 
 ---
 
 ## Impact
 
-- Saves 1–2 hours of daily content planning  
-- Ensures consistent posting workflow  
-- Provides ready-to-use TikTok content  
-- Organizes affiliate content into a structured system  
+- Eliminates manual product entry into spreadsheets  
+- Saves 1–2 hours daily on content ideation  
+- Simplifies workflow into a single Telegram command  
+- Provides ready-to-post TikTok content instantly  
 
 ---
 
 ## Proof
 
-- Workflow screenshots available in `/screenshots`  
-- Sample Google Sheets outputs included  
-- n8n workflow JSON included for replication  
+- Workflow screenshots in `/screenshots`  
+- Sample outputs in `/samples`  
+- n8n workflow JSON in `/workflow`  
 
 ---
 
@@ -114,17 +147,24 @@ Caption: POV: Nakita mo 'to sa FYP... #ShopeeFinds
 
 - TikTok Shop affiliates  
 - Content creators managing multiple products  
-- VA support for content marketing workflows  
+- Virtual assistants handling content workflows  
 
 ---
 
 ## Key Takeaway
 
-This project demonstrates how AI + automation can replace manual content ideation and turn it into a scalable, repeatable system.
+This project demonstrates how AI + automation can turn a multi-step manual workflow into a simple chat-based system.
+
+---
+
+## Notes
+
+Sensitive credentials (API keys, tokens, IDs) have been removed.  
+Connect your own credentials when importing the workflow.
 
 ---
 
 ## Built By
 
 Marla Daniella  
-AI Automation & Workflow Systems Builder  
+AI Automation & Workflow Systems Builder
