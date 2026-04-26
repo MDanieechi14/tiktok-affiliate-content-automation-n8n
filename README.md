@@ -98,7 +98,7 @@ Stay cool for just ₱99! #TikTokBudol #SummerFinds
 
 ## Data Storage (Google Sheets)
 
-![Google Sheets](screenshots/google-sheets.png)
+![Google Sheets](screenshots/google-sheets-database.png)
 
 ---
 
